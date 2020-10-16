@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		<meta charset =utf-8>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="icon" href="IMG/LOGO.ico">
+    <link rel="stylesheet" href="ESTILOS/estiloBasic.css">
+		<link rel="stylesheet" href="ESTILOS/estiloCotiza.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ESTILOS/estilosmenu.css">
+    <link rel="stylesheet" href="ESTILOS/slide.css">
+    <link rel="stylesheet" href="socialmedia.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function(){
+      $(".casa").mouseover(function(){
+        $(".container-menu").css({"visibility":"visible"});
+      });
+       $(".casa").click(function(){
+         $(".container-menu").toggle("1500ms");
+       });
+       $("#nosotros").mouseover(function(){
+         $(".sub1").css("top","126px");
+       });
+       $(".sub1").mouseover(function(){
+         $(".sub1").css("top","126px");
+       });
+       $(".sub1").mouseout(function(){
+         $(".sub1").css("top","-400px");
+       });
+       $("#promociones").mouseover(function(){
+         $(".sub1").css("top","-400px");
+       });
+       $("#paquetes").mouseover(function(){
+         $(".sub1").css("top","-400px");
+       });
+       $("#design").mouseover(function(){
+         $(".sub1").css("top","-400px");
+       });
+       $("header").mouseover(function(){
+         $(".sub1").css("top","-400px");
+       });
+       $("ul.tabs li a:first").addClass("active");
+       $(".secciones article").hide("1500ms");
+       $(".secciones article#tab1").show("1500ms");
+
+       $("ul.tabs li a").click(function(){
+          $("ul.tabs li a").removeClass("active");
+          $(this).addClass("active");
+          $(".secciones article").hide("1500ms");
+
+          var activeTab = $(this).attr("href");
+          $(activeTab).show("1500ms");
+          return false;
+       });
+    });
+    </script>
+		<title>Slideart</title>
+	</head>
+
+    <body>
+      <header>
+  <nav class="all">
+    <div class="logo">
+        <a href="Slideart.html"><img src="IMG/oficial.png" alt="home"></a>
+    </div>
+    <div class="enlaces">
+        <a class="cotiza" href="cotiza.html"><i class="fa fa-database" aria-hidden="true"></i>COTIZAR</a>
+        <a class="casa" href="#"><i class="fa fa-th fa-lg" aria-hidden="true"></i></a>
+    </div>
+  </nav>
+  </header>
+    <div class="container-menu">
+        <nav class="menu">
+            <a href="nosotros.html" class="item" id="nosotros">NOSOTROS</a>
+            <a href="design.html" class="item" id="design">DISEÑADORES</a>
+            <a href="aprende.html" class="item" id="promociones">APRENDE GRATIS</a>
+            <a href="paquetes.html" class="item" id="paquetes">PAQUETES DE DISEÑO</a>
+        </nav>
+    </div>
+   
+<div class="social">
+		<ul>
+      <li><a href="https://www.facebook.com/SlideartCompany/" target="_blank" class="icon-facebook1"></a></li>
+			<li><a href="https://m.me/SlideartCompany" target="_blank" class="icon-bubble"></a></li>
+      <li><a href="https://instagram.com/slideart.comp?igshid=7c6ro0427h5s" target="_blank" class="icon-instagram"></a></li>
+			<li><a href="https://l.facebook.com/l.php?u=mailto%3Aslideartcompany%40gmail.com%3F" class="icon-envelope2"></a></li>
+		</ul>
+</div>
+
+    <div class="cotizador">
+        <div class="wrap1">
+        <ul class="tabs">
+            <li><a href="#tab1" id="uno"><span class="tab-number">1</span><br><span class="tab-text">PAQUETES<br>DE DISEÑO</span></a></li>
+            <li><a href="#tab2" id="dos"><span class="tab-number">2</span><br><span class="tab-text">CARACTERÍSTICAS<br>DEL DISEÑO</span></a></li>
+            <li><a href="#tab3" id="tres"><span class="tab-number">3</span><br><span class="tab-text">ELIGE A TU<br>DISEÑADOR(A)</span></a></li>
+            <li><a href="#tab4" id="cuatro"><span class="tab-number">4</span><br><span class="tab-text">DATOS DE<br>CONTACTO</span></a></li>
+            <li><a href="#tab5" id="cinco"><span class="tab-number">5</span><br><span class="tab-text">MODO DE<br>PAGO</span></a></li>
+        </ul>
+        <div class="secciones">
+          <article id="tab1">
+
+              <div class="paso1">
+                <li><a href="#" class="opciones"><p>Plantillas (S/3.00 - S/5.00)</p></a></li>
+                <li><a href="#" class="opciones"><p>Ajuste de plantillas (S/3.00+)</p></a></li>
+                <li><a href="#" class="opciones"><p>Diapositivas personalizadas (S/3.00+)</p></a></li>
+                <li><a href="#" class="opciones"><p>Diapositivas profesionales S/25.00</p></a></li>
+                <li><a href="#" class="opciones"><p>Sustentación de tesis (S/100 - S/150)</p></a></li>
+                <li><a href="#" class="opciones"><p>Anuncios/Flyers (S/30.00 - S/35.00)</p></a></li>
+                <li><a href="#" class="opciones"><p>Otros</p></a></li>
+              </div>
+              <img src="IMG/start.png">
+
+          </article>
+          <article id="tab2">
+                <h1>SECCCIÓN 2</h1>
+                <p>Opta por solicitar un PAQUETE DE DISEÑO preestablecido para cotizar y comunicarle a tu diseñador lo que
+                   quieres fácilmente. Sino aún tienes la opción OTROS para otro tipo de diseños. Si aún no sabes en que
+                   consisten los paquetes de diseño presiona el link en la parte inferior. Si necesitas una asesoría para
+                   elegirlo contáctenos a nuestro Whatsapp al 952505077.</p>
+          </article>
+          <article id="tab3">
+                <h1>SECCCIÓN 3</h1>
+                <p>Opta por solicitar un PAQUETE DE DISEÑO preestablecido para cotizar y comunicarle a tu diseñador lo que
+                   quieres fácilmente. Sino aún tienes la opción OTROS para otro tipo de diseños. Si aún no sabes en que
+                   consisten los paquetes de diseño presiona el link en la parte inferior. Si necesitas una asesoría para elegirlo contáctenos a nuestro Whatsapp al 952505077.</p>
+          </article>
+          <article id="tab4">
+                <h1>Solicitud de pedido</h1>
+                <form action="#" class="formulario1">
+                  <label for="email">Correo Electrónico</label><br>
+                  <input type="email" name="email" id="email" size='40' required><br><br>
+                  
+                  <input type="radio" name="selectOption" id="plantilla" value="plantilla">
+                  <label for="plantilla">PLANTILLA PREESTABLECIDA. Elige una plantilla gratuita.</label><br>
+
+                  <input type="radio" name="selectOption" id="personalizada" value="personalizada">
+                  <label for="personalizada">PLANTILLA PERSONALIZADA. Solicita un diseño personalizado.</label><br><br>
+
+                  <label for="genero">¿Nos puede mencionar su género o desea que el diseño sea unisex?</label><br>
+                  <input list="gender" name="genero" id="genero">
+                  <datalist id="gender">
+                    <option value="Mujer">
+                    <option value="Hombre">
+                    <option value="Unisex">
+                  </datalist>
+                  <br><br>
+
+                  <p>¿Cuán formal serán tus diapositivas?</p>
+                  <div class="howformal">
+                    <p>Informal</p>
+
+                    <label for="selection">1</label><br>
+                    <input type="radio" name="selection" id="selection">
+
+                    <label for="selection">2</label><br>
+                    <input type="radio" name="selection" id="selection">
+
+                    <label for="selection">3</label><br>
+                    <input type="radio" name="selection" id="selection">
+
+                    <label for="selection">4</label><br>
+                    <input type="radio" name="selection" id="selection">
+
+                    <label for="selection">5</label><br>
+                    <input type="radio" name="selection" id="selection">
+
+                    <p>Formal</p>
+                  </div>
+                  <p>Sube tu archivo</p>
+                    <input type="file" name="work" id="work"><br><br>
+
+                  <p>¿Te gustaría alguna de estas adiciones?</p>
+                  
+                    <input type="checkbox" name="extra" id="extra">
+                    <label for="extra">Editabilidad, se le enviarán las fuentes utilizadas junto con el ppt (cargo extra de S/. 0.50)</label><br>
+
+                    <input type="checkbox" name="extra" id="extra">
+                    <label for="extra">Animaciones, transiciones o gifs (cargo extra de S/. 1.00)</label><br>
+
+                    <input type="checkbox" name="extra" id="extra">
+                    <label for="extra">Revisión ortográfica (cargo extra de S/.0.50)</label><br>
+            
+                </form>
+          </article>
+          <article id="tab5">
+                <h1>SECCCIÓN 5</h1>
+                <form action="#" class="formulario">
+                <div class="modoPago">
+                  
+                  <input type="radio" name="pago" id="lukita" value="lukita">
+                  <label for="lukita">BBVA móvil: PLIN (LUKITA)</label><br>
+
+                  <input type="radio" name="pago" id="yape"  value="yape" >
+                  <label for="yape">BCP móvil: YAPE</label><br>
+
+                  <input type="radio" name="pago" id="plin" value="plin">
+                  <label for="plin">SCOTIABANK móvil: PLIN</label><br>
+
+                  <input type="radio" name="pago" id="tunki" value="tunki">
+                  <label for="tunki">INTERBANK móvil: PLIN (TUNKI)</label><br>
+
+                  <input type="radio" name="pago" id="BCP" value="BCP">
+                  <label for="BCP">BCP: Depósito / Agente / Cajero</label><br>
+
+                  <input type="radio" name="pago" id="BBVA" value="BBVA">
+                  <label for="BBVA">BBVA: Depósito</label>
+
+                </div>
+
+                <div class="acepto">
+                  <p>Acepto la política de privacidad del formulario y los términos de confidencialidad</p>
+
+                  <div class="switch-button">
+                    <input type="checkbox" name="switch-button" id="switch-label" class="switch-button_checkbox">
+                    <label for="switch-label" class="switch-button_label"></label>
+                  </div>
+                </div>
+                <input type="submit" value="ENVIAR">
+
+                </form> 
+
+          </article>
+        </div>
+
+        </div>
+    </div>
+
+<footer>
+  <div id="footer">
+      <div class="nosotros">
+        <h3>SOBRE NOSOTROS</h3>
+        <a href="confidencialidad.html" target="_blank"><p>Términos de confidencialidad</p></a>
+        <a href="vision.html"><p>Misión y visión</p></a>
+        <a href="trabaja.html"><p>Trabaja con nosotros</p></a>
+      </div>
+      <div class="empresa">
+        <h3>PARA EMPRESA</h3>
+        <a href="empresas.html"><p>Slideart y empresas</p></a>
+      </div>
+      <div class="contacto">
+        <center><h3>CONTACTO</h3></center>
+        <p>952505077 <a href="https://api.whatsapp.com/send?phone=51952505077&fbclid=IwAR2mHffCqzAS1KqdStlIG8BO478RGyU4rC9ydVms2xySJStCg2DVfjso9sA" class="icon-whatsapp"></a><a href="https://m.me/SlideartCompany" class="icon-bubble"></a><a href="https://l.facebook.com/l.php?u=mailto%3Aslideartcompany%40gmail.com%3F" class="icon-envelope2"></a></p>
+        <p>Síguenos en <a href="https://instagram.com/slideart.comp?igshid=7c6ro0427h5s" class="icon-instagram"></a><a href="https://www.facebook.com/SlideartCompany/" class="icon-facebook"></a></p>
+      </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright 2020.Todos los derechos reservados</p>
+    <a href="privacidad.html" target="_blank"><p>Políticas de privacidad<i class="fa fa-lock" aria-hidden="true"></i>|</p></a>
+    <a href="uso.html" target="_blank"><p>Condiciones de uso<i class="fa fa-file" aria-hidden="true"></i>|</p></a>
+  </div>
+</footer>
+    </body>
+</html>

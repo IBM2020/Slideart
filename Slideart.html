@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		<meta charset =utf-8>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="icon" href="IMG/ISOTIPO.ico">
+    <link rel="stylesheet" href="ESTILOS/estiloBasic.css">
+    <link rel="stylesheet" href="ESTILOS/estiloIndex.css">
+    <link rel="stylesheet" href="ESTILOS/estilosmenu.css">
+    <link rel="stylesheet" href="socialmedia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script>
+    $(document).ready(function(){
+      $(".casa").mouseover(function(){
+        $(".container-menu").css({"visibility":"visible"});
+      });
+       $(".casa").click(function(){
+         $(".container-menu").toggle("1500ms");
+       });
+       $("#nosotros").mouseover(function(){
+         $(".sub1").css("top","126px");
+       });
+       $(".sub1").mouseover(function(){
+         $(".sub1").css("top","126px");
+       });
+       $(".sub1").mouseout(function(){
+         $(".sub1").css("top","-400px");
+       });
+       $("#promociones").mouseover(function(){
+         $(".sub1").css("top","-400px");
+       });
+       $("#paquetes").mouseover(function(){
+         $(".sub1").css("top","-400px");
+       });
+       $("#design").mouseover(function(){
+         $(".sub1").css("top","-400px");
+       });
+       $("header").mouseover(function(){
+         $(".sub1").css("top","-400px");
+       });
+    });
+    </script>
+		<title>Slideart</title>
+	</head>
+
+  <body>
+  <header>
+    <nav class="all" id="menu">
+      <div class="enlaces">
+          <a class="casa" href="#"><img src="IMG/bars2.png" alt="menu" width="100%"></a>
+          <a class="cotiza" href="cotiza.html">COTIZAR</a> 
+      </div>
+      <div class="logo">
+        <a href="Slideart.html"><img src="IMG/ISOTIPO_1X1_FONDO.png" alt="home"></a>
+    </div>
+    </nav>
+  </header>
+
+  <script>
+    $(window).scroll(function(){
+      if ($("header").offset().top>250){
+          $("header").addClass("background-primary");
+      }else{
+          $("header").removeClass("background-primary");
+      }
+    });
+  </script>
+
+  <div class="container-menu">
+        <nav class="menu">
+            <a href="nosotros.html" class="item" id="nosotros"><p>¿Cómo funciona?</p><i class="fas fa-rocket  fa-3x icon"></i></a>
+            <a href="design.html" class="item" id="design"><p>Beneficios</p><i class="fas fa-chart-bar  fa-3x icon"></i></a>
+            <a href="aprende.html" class="item" id="promociones"><p>Testimonios</p><i class="fas fa-user-check  fa-3x icon"></i></a>
+            <a href="paquetes.html" class="item" id="paquetes"><p>Nosotros</p><i class="fas fa-users  fa-3x icon"></i></a>
+            <a href="paquetes.html" class="item" id="paquetes"><p>Trabaja con nosotros</p><i class="fas fa-handshake  fa-3x icon"></i></a>
+        </nav>
+  </div>
+
+  <div class="saberw">
+    <a  class="icon-whatsapp" id="saber" href="https://api.whatsapp.com/send?phone=51952505077&fbclid=IwAR2mHffCqzAS1KqdStlIG8BO478RGyU4rC9ydVms2xySJStCg2DVfjso9sA"></a>
+    <a href="https://api.whatsapp.com/send?phone=51952505077&fbclid=IwAR2mHffCqzAS1KqdStlIG8BO478RGyU4rC9ydVms2xySJStCg2DVfjso9sA"><p>¿Quieres saber más? ¡Escríbenos!</p></a>
+  </div>
+
+  <div class="social">
+		<ul>
+      <li><a href="https://www.facebook.com/SlideartCompany/" target="_blank" class="icon-facebook1"></a></li>
+			<li><a href="https://m.me/SlideartCompany" target="_blank" class="icon-bubble"></a></li>
+      <li><a href="https://instagram.com/slideart.comp?igshid=7c6ro0427h5s" target="_blank" class="icon-instagram"></a></li>
+      <li><a href="https://vm.tiktok.com/ZSxdw9Yv/" target="_blank" class="icon-tiktok"><i class="fab fa-tiktok"></i></a></li>
+      <li><a href="https://l.facebook.com/l.php?u=mailto%3Aslideartcompany%40gmail.com%3F" class="icon-envelope2"></a></li>
+		</ul>
+  </div>
+  
+  <article class="parte1">
+    <div class="fondo">
+      <img src="IMG/Fondo2.png">
+    </div>  
+
+    <div class="blank" style="height: 80px;"></div>
+    
+    <div class="principal">
+
+      <div class="Solo-titulo">
+        <h1>Diseñamos</h1><h2>TU ÉXITO</h2>
+      </div>
+          
+      <div class="imagen">
+        <img src="IMG/Principal2.png" alt="Slides presentation" style="width: 100%;">
+      </div>
+
+    </div>
+
+    <div class="buen-disenio">
+      <div class="text2">
+        <h2>UN BUEN DISEÑO</h2>
+        <div class="fondoblanco">
+          <h3>HABLA BIEN DE TI Y POR TI</h3><br>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim hic, aut unde alias impedit fugit iusto dolorum distinctio reprehenderit molestias incidunt
+             quasi optio nesciunt quo temporibus cumque error. Laudantium, velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sunt at maxime magnam,
+            </p>
+          <br><h5>Slideart</h5><br>
+  
+         <a href="#">CONTÁCTANOS</a>
+        </div>
+      </div>
+      <div class="imagen2">
+        <img src="IMG/PlantillaSLIDEART.png" alt="Slideart" style="width: 100%;">
+      </div>
+
+    </div>
+
+    <div class="rapido">
+      <div class="titulo3">
+        <h3>ELABORAMOS TUS DIAPOSITIVAS EN</h3>
+        <i class="fas fa-minus fa-2x" style="color: #fff;"></i>
+        <h2>24 horas</h2>
+      </div>
+
+        <div class="slideshow-container">
+			
+          <div class="Slides-transition">
+              <img src="IMG/Diapo15.PNG">
+          </div>
+          <div class="Slides-transition">
+              <img src="IMG/Diapo17.PNG">
+          </div>
+          <div class="Slides-transition">
+              <img src="IMG/Diapo16.PNG">
+          </div>
+    
+          <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-circle-left fa-3x"></i></a>
+          <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-circle-right fa-3x"></i></a>
+        </div>
+    
+       <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("Slides-transition");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+        
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace("active", "");
+          }
+        
+        slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+      <center><a href="#" class="paquete"><i class="fas fa-plus"></i>PAQUETES DE DISEÑO</a></center>
+    </div>
+
+    <img src="IMG/Efecto1.png" class="efecto">
+    <div class="blank" style="height: 80px;"></div>
+
+    <div class="impacto">
+      <h3>Presentaciones de alto impacto</h3>
+      
+      <div class="bloque-all">
+        <div class="bloque primero">
+            <img src="IMG/Impacto2.png" alt="plantillas">
+
+            <a href="#" class="texto3">
+              <h2>DISTRIBUCIÓN DE INFORMACIÓN</h2>
+              <p>Elige una plantilla, subes tu información y te enviamos tus diapositivas en 4 horas.</p>
+            </a>
+
+        </div>
+        <div class="bloque segundo">
+           <img src="IMG/Impacto3.png" alt="personlizado">
+
+           <a href="#" class="texto3">
+            <h2>PLANTILLA<br>PERSONALIZADA</h2>
+            <p>¿Quieres impactar? Personalizamos tus plantillas, con un diseño personalizado lo lograrás.</p>
+           </a>
+           
+        </div>
+        <div class="bloque tercero">
+           <img src="IMG/Impacto1.png" alt="Anuncios">
+
+           <a href="#" class="texto3">
+            <h2>DISEÑOS PARA REDES SOCIALES</h2>
+            <p>¿Eres emprendedor? Diseños para tus redes sociales, feeds, anuncios y diseños empresariales.</p>
+          </a>
+           
+        </div>
+
+      </div>
+      <center><a href="#" class="paquete">COTIZAR</a></center>
+    </div>
+
+    <div class="banner">
+      <a href="#" class="otro">SABER MÁS</a>
+    </div>
+  
+    <img src="IMG/Efecto2.png" class="efecto2">
+
+    <div class="testimonios">
+          <div class="texto5">
+            <h3 style="text-align: left;">Nuestros clientes nos recomiendan</h3>
+
+            <div class="users">
+                <img src="IMG/User1.png">
+                <div class="sub-texto5">
+                  <i class="fas fa-quote-left fa-2x"></i>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis quidem, deserunt reprehenderit ea explicabo architecto placeat quae ullam natus ut recusandae dolorum quod labore in dolor adipisci quas iusto unde.</p>
+                  <i class="fas fa-quote-right fa-2x"></i>
+                  <h5>Anónimo</h5>
+                  
+                </div>
+            </div>
+
+          </div>
+          <div class="imagen5">
+              <img src="IMG/chats.png">
+          </div>
+        
+    </div>
+  </div>
+    
+<footer>
+  <div id="footer">
+      <div class="nosotros">
+        <img src="IMG/oficial.png" style="width: 100px; height: auto;">
+        <a href="vision.html"><p>Misión y visión</p></a>
+        <a href="trabaja.html"><p>Trabaja con nosotros</p></a>
+      </div>
+      <div class="empresa">
+        <h3>BASE LEGAL</h3>
+        <a href="confidencialidad.html" target="_blank"><p>Términos de confidencialidad</p></a>
+        <a href="privacidad.html" target="_blank"><p>Políticas de privacidad</p></a>
+        <a href="uso.html" target="_blank"><p>Condiciones de uso</p></a>
+
+      </div>
+      <div class="contacto">
+        <center><h3>CONTACTO</h3></center>
+        <p>952505077 <a href="https://api.whatsapp.com/send?phone=51952505077&fbclid=IwAR2mHffCqzAS1KqdStlIG8BO478RGyU4rC9ydVms2xySJStCg2DVfjso9sA" class="icon-whatsapp"></a><a href="https://m.me/SlideartCompany" class="icon-bubble"></a><a href="https://l.facebook.com/l.php?u=mailto%3Aslideartcompany%40gmail.com%3F" class="icon-envelope2"></a></p>
+        <p>Síguenos en <a href="https://instagram.com/slideart.comp?igshid=7c6ro0427h5s" class="icon-instagram"></a><a href="https://www.facebook.com/SlideartCompany/" class="icon-facebook"></a></p>
+      </div>
+  </div>
+  <div class="copyright">
+    <p>COPYRIGHT 2020. Todos los derechos reservados</p>
+  </div>
+</footer>
+
+</body>
+</html>
