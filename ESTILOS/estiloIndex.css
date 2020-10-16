@@ -1,0 +1,507 @@
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+  /*----cuerpo-----*/
+.content-all{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0px;
+}
+.parte1{
+  width:100%;
+  position:relative;
+  top: 0;
+  margin: 0px auto;
+}
+.fondo{
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.fondo img{
+  width: 100%;
+}
+.saberw{
+	background:#5fb7ff;
+  display: inline-flex;
+  padding: 4px 12px;
+  position:fixed;
+  right:0;
+  bottom: 8%;
+  border-radius: 5px 0px 0px 5px;
+  box-shadow: -10px 10px 20px -10px rgba(0,0,0,0.5);
+  z-index: 10000;
+  transition: all ease 350ms;
+}
+.saberw a{
+  text-decoration: none;
+  list-style: none;
+}
+.saberw p{
+  font-family: 'Montserrat', sans-serif;
+  font-size:18px;
+  font-weight: 500;
+  color: #000;
+}
+#saber{
+  color:#000;
+  text-decoration: none;
+  padding-right: 7px;
+}
+.principal{
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px auto;
+  transition: all ease 350ms;
+}
+.imagen{
+  width: 50%;
+}
+.Solo-titulo{
+  width: 40%;
+  min-width: 135px;
+  height: 100%;
+  text-align: center;
+}
+.Solo-titulo h1{
+  font-family: 'Playlist Script', sans-serif;
+  font-size: 120px;
+  color: #fff;
+}
+.Solo-titulo h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  position: relative;
+  top: -40px;
+  color: #fff;
+}
+/*-------------------------------------------*/
+.buen-disenio{
+  width: 80%;
+  margin: 0px auto 80px auto;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 180px;
+  transition: all ease 350ms;
+}
+.text2{
+  width: 50%;
+}
+.text2 h2{
+  font-weight: 600; 
+  font-size: 38px;
+}
+.text2 h3{
+  font-weight: 400; 
+  font-size: 35px;
+}
+.text2 h5{
+  font-family: 'Playlist Script', sans-serif;
+  font-size: 24px;
+  text-align: right;
+}
+.text2 p{
+  font-weight: 400;
+}
+.text2 a, .paquete{
+  text-decoration: none;
+  font-size:20px;
+  font-weight: 400;
+  color: #fff;
+  background: #0b164b;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all ease 350ms;
+}
+.text2 a:hover, .paquete:hover{
+  background: #fff;
+  border: 2px solid #0b164b;
+  color: #0b164b;
+  font-weight: 600;
+}
+.fondoblanco{
+  background: rgba(255, 255, 255, .95); 
+  width: 115%;
+  padding: 0px 30px 40px 20px;
+  position: relative;
+  z-index: 10;
+  border-top: 2px solid #000;
+}
+.imagen2{
+  width: 50%;
+  min-width: 300px;
+  position: relative;
+  right: 20px;
+  top: 0;
+}
+.buen-disenio img:hover{
+  transition: all ease 350ms;
+  transform: scale(1.2);
+}
+/*-------------------------------------------*/
+.rapido{
+  width: 80%;
+  position: relative;
+  top: 100px;
+  margin: 100px auto 20px auto;
+}
+.rapido .titulo3{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.rapido .titulo3 i{
+  background: #E63944;
+  padding: 8px 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.rapido h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  height: 100%;
+  width: 300px;
+  margin-right: 10px;
+}
+.rapido h2{
+  font-family: 'Playlist Script', sans-serif;
+  font-size: 60px;
+  width: 250px;
+}
+.rapido a, .rapido p{
+  font-family: 'Montserrat', sans-serif;
+}
+.rapido a{
+  margin-top: 100px;
+}
+.rapido i{
+  margin-right: 8px;
+}
+.slideshow-container
+{ width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 15px auto 25px auto;
+}
+.Slides-transition
+{ display: none;
+}
+.Slides-transition img
+{ width: 100%;
+  border: none;
+}
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  color: rgba(0, 0, 0, .8);
+  padding: 0;
+  background: none;
+  transition: 0.5s ease;
+}
+.slideshow-container .next{
+  right: -50px;
+}
+.slideshow-container .prev{
+  left: -50px;
+}
+.prev:hover, .next:hover {
+  color:  #470070;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*-------------------------------------------*/
+.impacto{
+  width: 80%;
+  margin: 80px auto 30px auto;
+  font-family: 'Montserrat', sans-serif;
+}
+.impacto h3, .texto5 h3{
+  font-family: 'Playlist Script', sans-serif;
+  font-size: 60px;
+  text-align: center;
+}
+.bloque-all{
+  width: 100%;
+  margin: 0px auto 50px auto;
+  display: flex;
+  justify-content: space-between;
+  transition: all ease 350ms;
+}
+.bloque{
+  width: 30%;
+}
+.bloque img{
+  width: 100%;
+  margin: 15px 0px;
+}
+.bloque h2{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  padding: 5px 0px;
+}
+.bloque p{
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+  height: 100px;
+  box-shadow: -10px 10px 10px -10px rgba(0, 0, 0, .5);
+}
+.bloque a{
+  background: #c4e3ffb2;
+  border-radius: 0px 0px 25px 0px;
+  text-decoration: none;
+  color: #000;
+}
+.bloque a:hover h2{
+  transform: translateY(10px);
+}
+.bloque a:hover p{
+  transform: translateY(10px);
+}
+.efecto{
+  position: absolute;
+  left: 0;
+  z-index: -10;
+  width: 10%;
+}
+.efecto2{
+  position: absolute;
+  right: 0;
+  z-index: -10;
+  width: 20%;
+}
+.banner{
+  width: 100%;
+  height: 450px;
+  margin: 50px 0px;
+  background: url(ESTUDIANTES_24H.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-y: center;
+  transition: all ease 350ms;
+}
+.banner a{
+  position: relative;
+  top: 85%;
+  left: 85%;
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.otro:hover{
+  background: none;
+  border: 2px solid white;
+  color: white;
+}
+/*-------------------------------------------*/
+.testimonios{
+  width: 80%;
+  margin: 0px auto 50px auto;
+  font-family: 'Montserrat',sans-serif;
+  display: flex;
+}
+.texto5{
+  width: 70%;
+}
+.imagen5{
+  width: 30%;
+}
+.imagen5 img{
+  width: 100%;
+}
+.users{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.users img{
+  width: 35%;
+  height: 35%;
+}
+.users .sub-texto5{
+  width: 55%;
+  align-items: center;
+  padding: 40px;
+}
+.sub-texto5 p{
+  font-size: 20px;
+  text-align: center;
+}
+.sub-texto5 h5{
+  font-family: 'Playlist Script', sans-serif;
+  font-size: 30px;
+  text-align: right;
+}
+.texto5 .fa-quote-right{
+  position: relative;
+  left: 90%;
+}
+.texto5 .fa-quote-left{
+  margin-top: 10px;
+}
+/*--------footer-------*/
+footer{
+    width:100%;
+    background: #f3f3f3;
+    font-family: 'Montserrat',sans-serif;
+    position: relative;
+    z-index: 20000;
+}
+/*---------------------*/
+@media only screen and (max-width: 1000px) {
+  .Solo-titulo h1{
+    font-size: 100px;
+  }
+  .Solo-titulo h2{
+    font-size: 50px;
+    top: -20px;
+  }
+  .buen-disenio{
+    width: 85%;
+    top: 150px;
+  }
+  .text2 h2{
+    font-size: 29px;
+  }
+  .text2 h3{
+    font-size: 27px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .Solo-titulo h1{
+    font-size: 70px;
+  }
+  .Solo-titulo h2{
+    font-size: 36px;
+    top: -20px;
+  }
+  .buen-disenio{
+    top: 100px;
+  }
+  .text2{
+    width: 60%;
+  }
+  .text2 h2{
+    font-size: 24px;
+  }
+  .text2 h3{
+    font-size: 22px;
+  }
+  .text2 p{
+    font-size: 18px;
+  }
+  .text2 a{
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .buen-disenio{
+    display: flex;
+    flex-wrap: wrap;
+    top: 50px;
+    width: 100%;
+  }
+  .text2{
+    width: 80%;
+    min-width: 300px;
+    margin: 0px 5%; 
+  }
+  .imagen2{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    right: 0px;
+    background: #F3007A;
+  }
+  .buen-disenio img{
+    position: relative;
+    top: -22px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .principal{
+    width: 100%;
+    align-items: initial;
+  }
+  .Solo-titulo h1{
+    font-size: 50px;
+  }
+  .Solo-titulo h2{
+    font-size: 25px;
+    top: -20px;
+  }
+  .imagen{
+    width: 40%;
+  }
+  .banner{
+    background-position-x: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .principal{
+    position: relative;
+    top: -25px;
+  }
+  .Solo-titulo h1{
+    font-size: 40px;
+  }
+  .Solo-titulo h2{
+    font-size: 16px;
+    top: -10px;
+  }
+  .imagen{
+    width: 40%;
+  }
+  .saberw{
+    width: 70%;
+  }
+  .saberw p{
+    font-size:14px;
+  }
+  .buen-disenio{
+    top:10px;
+  }
+  .text2{
+    min-width: 100px;
+    width: 100%;
+  }
+  .text2 h2, .text2 h3{
+    font-size: 16px;
+  }
+  .text2 p, .text2 a, .text2 h5{
+    font-size: 12px;
+  }
+}
