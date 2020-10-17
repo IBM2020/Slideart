@@ -29,12 +29,12 @@ body{
   width: 100%;
 }
 .saberw{
-	background:#5fb7ff;
+	background:#E63944;
   display: inline-flex;
   padding: 4px 12px;
   position:fixed;
   right:0;
-  bottom: 8%;
+  bottom: 0;
   border-radius: 5px 0px 0px 5px;
   box-shadow: -10px 10px 20px -10px rgba(0,0,0,0.5);
   z-index: 10000;
@@ -48,10 +48,10 @@ body{
   font-family: 'Montserrat', sans-serif;
   font-size:18px;
   font-weight: 500;
-  color: #000;
+  color: #fff;
 }
 #saber{
-  color:#000;
+  color:#fff;
   text-decoration: none;
   padding-right: 7px;
 }
@@ -270,13 +270,14 @@ body{
   text-align: center;
   padding: 10px;
   height: 100px;
+}
+.texto3{
   box-shadow: -10px 10px 10px -10px rgba(0, 0, 0, .5);
+  margin-bottom: 10px;
 }
 .bloque a{
-  background: #c4e3ffb2;
-  border-radius: 0px 0px 25px 0px;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 .bloque a:hover h2{
   transform: translateY(10px);
