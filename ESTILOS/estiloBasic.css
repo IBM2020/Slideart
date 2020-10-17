@@ -8,9 +8,14 @@ body::-webkit-scrollbar-thumb{
 	border-left: 2px solid #fff;
 }
 /* -------Fuentes------------*/
-@font-face{
-	font-family: 'Playlist Script';
-	src: url(PlaylistScript.otf);
+
+@font-face {font-family: "Playlist";
+    src: url("http://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot"); /* IE9*/
+    src: url("http://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("http://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff2") format("woff2"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.woff") format("woff"), /* chrome firefox */
+    url("http://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("http://db.onlinewebfonts.com/t/1fed4454352f201d52b65ca5480afb2d.svg#Playlist") format("svg"); /* iOS 4.1- */
 }
 /*--------Social media---------*/
 .social {
@@ -46,6 +51,7 @@ body::-webkit-scrollbar-thumb{
 	#footer{
 	  display: flex;
 	  flex-direction: row;
+	  flex-wrap: wrap;
 	  justify-content: space-around;
 	}
 	#footer h3{
@@ -56,7 +62,7 @@ body::-webkit-scrollbar-thumb{
 	  font-size: 18px;
 	}
 	.nosotros, .empresa, .contacto{
-	    padding: 15px;
+		padding: 15px;
 	}
 	.nosotros a, .empresa a{
 	  list-style: none;
@@ -97,4 +103,13 @@ body::-webkit-scrollbar-thumb{
 	.social ul li .icon-tiktok{
 		padding-right: 13px;
 	} 
+	#footer p, .copyright p{
+		font-size: 14px;
+	}
+	#footer h3{
+		font-size: 16px;
+	}
+	.empresa, .contacto, .nosotros{
+		width: 240px;
+	}
 }

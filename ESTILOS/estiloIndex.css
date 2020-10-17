@@ -74,7 +74,7 @@ body{
   text-align: center;
 }
 .Solo-titulo h1{
-  font-family: 'Playlist Script', sans-serif;
+  font-family: 'Playlist', sans-serif;
   font-size: 120px;
   color: #fff;
 }
@@ -110,7 +110,7 @@ body{
   font-size: 35px;
 }
 .text2 h5{
-  font-family: 'Playlist Script', sans-serif;
+  font-family: 'Playlist', sans-serif;
   font-size: 24px;
   text-align: right;
 }
@@ -153,6 +153,9 @@ body{
   transform: scale(1.2);
 }
 /*-------------------------------------------*/
+.blank{
+  height: 80px;
+}
 .rapido{
   width: 80%;
   position: relative;
@@ -180,7 +183,7 @@ body{
   margin-right: 10px;
 }
 .rapido h2{
-  font-family: 'Playlist Script', sans-serif;
+  font-family: 'Playlist', sans-serif;
   font-size: 60px;
   width: 250px;
 }
@@ -239,7 +242,7 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 .impacto h3, .texto5 h3{
-  font-family: 'Playlist Script', sans-serif;
+  font-family: 'Playlist', sans-serif;
   font-size: 60px;
   text-align: center;
 }
@@ -247,11 +250,13 @@ body{
   width: 100%;
   margin: 0px auto 50px auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   transition: all ease 350ms;
 }
 .bloque{
   width: 30%;
+  min-width: 200px;
 }
 .bloque img{
   width: 100%;
@@ -332,6 +337,7 @@ body{
   margin: 0px auto 50px auto;
   font-family: 'Montserrat',sans-serif;
   display: flex;
+  flex-wrap: wrap;
 }
 .texto5{
   width: 70%;
@@ -345,23 +351,26 @@ body{
 .users{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 .users img{
   width: 35%;
   height: 35%;
+  min-width: 100px;
 }
 .users .sub-texto5{
   width: 55%;
   align-items: center;
   padding: 40px;
+  min-width: 150px;
 }
 .sub-texto5 p{
   font-size: 20px;
   text-align: center;
 }
 .sub-texto5 h5{
-  font-family: 'Playlist Script', sans-serif;
+  font-family: 'Playlist', sans-serif;
   font-size: 30px;
   text-align: right;
 }
@@ -399,6 +408,9 @@ footer{
   .text2 h3{
     font-size: 27px;
   }
+  .impacto h3, .texto5 h3{
+    font-size: 50px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .Solo-titulo h1{
@@ -426,6 +438,13 @@ footer{
   .text2 a{
     font-size: 18px;
   }
+  .impacto h3, .texto5 h3, .rapido h2{
+    font-size: 40px;
+  }
+  .rapido h3{
+    font-size: 20px;
+    width: 200px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .buen-disenio{
@@ -445,11 +464,6 @@ footer{
     height: 350px;
     overflow: hidden;
     right: 0px;
-    background: #F3007A;
-  }
-  .buen-disenio img{
-    position: relative;
-    top: -22px;
   }
 }
 @media only screen and (max-width: 500px){
@@ -497,12 +511,60 @@ footer{
   }
   .text2{
     min-width: 100px;
-    width: 100%;
+    width: 85%;
   }
   .text2 h2, .text2 h3{
     font-size: 16px;
   }
-  .text2 p, .text2 a, .text2 h5{
+  .text2 p, .text2 a, .text2 h5, .bloque p, .bloque a, .banner a, .testimonios p{
     font-size: 12px;
+  }
+  .impacto h3, .texto5 h3, .rapido h2, .testimonios h5{
+    font-size: 25px;
+  }
+  .rapido h2{
+    width: 100px;
+  }
+  .rapido h3{
+    font-size: 14px;
+    width: 150px;
+  }
+  .rapido{
+    margin-top: -50px;
+    top: 0px;
+  }
+  .prev, .next{
+    top: -50px;
+  }
+  .impacto{
+    margin-top: 0;
+  }
+  .blank{
+    height: 10px;
+  }
+  .bloque{
+    width: 60%;
+    margin: auto;
+  }
+  .bloque p{
+    height: 60px;
+  }
+  .banner a{
+    left: 35%;
+  }
+  .imagen5{
+    visibility: hidden;
+    width: 0;
+  }
+  .texto5{
+    width: 80%;
+    margin: auto;
+  }
+  .users .sub-texto5{
+    width: 100%;
+    padding: 10px;
+  }
+  .users img{
+    margin: auto;
   }
 }
