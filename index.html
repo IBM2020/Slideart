@@ -55,11 +55,32 @@
           <a class="cotiza" href="cotiza.html">COTIZAR</a> 
       </div>
       <div class="logo">
-        <a href="index.html"><img src="IMG/ISOTIPO_1X1_FONDO.png" alt="home"></a>
+        <a href="index.html"><img src="IMG/oficial.png" alt="home" id="home"></a>
     </div>
     </nav>
   </header>
+  <script>
+    var anchoVentana=window.innerWidth   
 
+    $(document).ready(function(){
+      if(anchoVentana < 500){
+        $("i").removeClass("fa-2x");
+      };
+      if(anchoVentana < 500){
+        $("#prev").removeClass("fa-3x");
+        $("#prev").addClass("fa-2x");
+      };
+      if(anchoVentana < 500){
+        $("#next").removeClass("fa-3x");
+        $("#next").addClass("fa-2x");
+      };
+      if(anchoVentana < 700){
+        $("#home").attr("src", "IMG/ISOTIPO_1X1.png");
+      };
+      
+    });
+    
+  </script>
   <script>
     $(window).scroll(function(){
       if ($("header").offset().top>250){
@@ -152,8 +173,8 @@
               <img src="IMG/Diapo16.PNG">
           </div>
     
-          <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-circle-left fa-3x"></i></a>
-          <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevron-circle-right fa-3x"></i></a>
+          <a class="prev" onclick="plusSlides(-1)"><i id="prev" class="fas fa-chevron-circle-left fa-3x"></i></a>
+          <a class="next" onclick="plusSlides(1)"><i id="next" class="fas fa-chevron-circle-right fa-3x"></i></a>
         </div>
     
        <script>
@@ -187,7 +208,7 @@
     </div>
 
     <img src="IMG/Efecto1.png" class="efecto">
-    <div class="blank" style="height: 80px;"></div>
+    <div class="blank"></div>
 
     <div class="impacto">
       <h3>Presentaciones de alto impacto</h3>
@@ -240,9 +261,9 @@
             <div class="users">
                 <img src="IMG/User1.png">
                 <div class="sub-texto5">
-                  <i class="fas fa-quote-left fa-2x"></i>
+                  <i class="fas fa-quote-left fa-2x" id="comillas"></i>
                   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis quidem, deserunt reprehenderit ea explicabo architecto placeat quae ullam natus ut recusandae dolorum quod labore in dolor adipisci quas iusto unde.</p>
-                  <i class="fas fa-quote-right fa-2x"></i>
+                  <i class="fas fa-quote-right fa-2x" id="comillas2"></i>
                   <h5>Anónimo</h5>
                   
                 </div>
