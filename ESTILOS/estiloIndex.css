@@ -31,7 +31,7 @@ body{
 .saberw{
 	background:#E63944;
   display: inline-flex;
-  padding: 4px 12px;
+  padding: 10px 12px;
   position:fixed;
   right:0;
   bottom: 0;
@@ -279,6 +279,7 @@ body{
 .texto3{
   box-shadow: -10px 10px 10px -10px rgba(0, 0, 0, .5);
   margin-bottom: 10px;
+  min-width: 250px;
 }
 .bloque a{
   text-decoration: none;
@@ -411,6 +412,9 @@ footer{
   .impacto h3, .texto5 h3{
     font-size: 50px;
   }
+  .banner a{
+    left: 35%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .Solo-titulo h1{
@@ -445,12 +449,16 @@ footer{
     font-size: 20px;
     width: 200px;
   }
+  .bloque p, .sub-texto5 p{
+    font-size: 16px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .buen-disenio{
     display: flex;
     flex-wrap: wrap;
     top: 50px;
+    margin-bottom: 0;
     width: 100%;
   }
   .text2{
@@ -465,6 +473,27 @@ footer{
     overflow: hidden;
     right: 0px;
   }
+  .imagen5{
+    visibility: hidden;
+    width: 0;
+  }
+  .texto5{
+    width: 80%;
+    margin: auto;
+  }
+  .users .sub-texto5{
+    width: 100%;
+    padding: 10px;
+  }
+  .users img{
+    margin: auto;
+  }
+  .blank{
+    height: 10px;
+  }
+  .rapido{
+    margin-top: 0;
+  }
 }
 @media only screen and (max-width: 500px){
   .principal{
@@ -478,11 +507,26 @@ footer{
     font-size: 25px;
     top: -20px;
   }
+  .text2 p{
+    font-size: 14px;
+  }
   .imagen{
     width: 40%;
   }
   .banner{
     background-position-x: center;
+  }
+  .bloque{
+    margin: auto;
+  }
+  .rapido{
+    top: 0px;
+  }
+  .impacto{
+    margin-top: 0;
+  }
+  .prev, .next{
+    top: -50px;
   }
 }
 @media only screen and (max-width: 400px) {
@@ -531,40 +575,11 @@ footer{
   }
   .rapido{
     margin-top: -50px;
-    top: 0px;
-  }
-  .prev, .next{
-    top: -50px;
-  }
-  .impacto{
-    margin-top: 0;
-  }
-  .blank{
-    height: 10px;
   }
   .bloque{
     width: 60%;
-    margin: auto;
   }
   .bloque p{
     height: 60px;
-  }
-  .banner a{
-    left: 35%;
-  }
-  .imagen5{
-    visibility: hidden;
-    width: 0;
-  }
-  .texto5{
-    width: 80%;
-    margin: auto;
-  }
-  .users .sub-texto5{
-    width: 100%;
-    padding: 10px;
-  }
-  .users img{
-    margin: auto;
   }
 }

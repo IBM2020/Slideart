@@ -91,7 +91,7 @@ body::-webkit-scrollbar-thumb{
 	  text-align: center;
 	}
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 	.social {
 		position: fixed;
 		top: 160px;
