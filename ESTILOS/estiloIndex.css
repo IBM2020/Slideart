@@ -74,7 +74,7 @@ body{
   text-align: center;
 }
 .Solo-titulo h1{
-  font-family: 'Playlist', sans-serif;
+  font-family: 'Playlist', 'Satisfy' , sans-serif;
   font-size: 120px;
   color: #fff;
 }
@@ -110,7 +110,7 @@ body{
   font-size: 35px;
 }
 .text2 h5{
-  font-family: 'Playlist', sans-serif;
+  font-family: 'Playlist','Satisfy' , sans-serif;
   font-size: 24px;
   text-align: right;
 }
@@ -183,7 +183,7 @@ body{
   margin-right: 10px;
 }
 .rapido h2{
-  font-family: 'Playlist', sans-serif;
+  font-family: 'Playlist', 'Satisfy' ,sans-serif;
   font-size: 60px;
   width: 250px;
 }
@@ -242,7 +242,7 @@ body{
   font-family: 'Montserrat', sans-serif;
 }
 .impacto h3, .texto5 h3{
-  font-family: 'Playlist', sans-serif;
+  font-family: 'Playlist', 'Satisfy' , sans-serif;
   font-size: 60px;
   text-align: center;
 }
@@ -349,18 +349,29 @@ body{
 .imagen5 img{
   width: 100%;
 }
+.SlideUser{
+  width: 100%;
+  overflow: hidden;
+  transition: all ease 350ms;
+}
 .users{
+  height: 100%;
+  width: 300%;
+  display: flex;
+  animation: userSlide 10s ease infinite alternate;
+}
+.each-user{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.users img{
+.each-user img{
   width: 35%;
-  height: 35%;
+  height: auto;
   min-width: 100px;
 }
-.users .sub-texto5{
+.sub-texto5{
   width: 55%;
   align-items: center;
   padding: 40px;
@@ -371,7 +382,7 @@ body{
   text-align: center;
 }
 .sub-texto5 h5{
-  font-family: 'Playlist', sans-serif;
+  font-family: 'Playlist', 'Satisfy' , sans-serif;
   font-size: 30px;
   text-align: right;
 }
@@ -382,13 +393,24 @@ body{
 .texto5 .fa-quote-left{
   margin-top: 10px;
 }
+@keyframes userSlide {
+	0% {margin-left: 0;}
+  30% {margin-left: 0;}
+
+	35% {margin-left: -100%;}
+	65% {margin-left: -100%;}
+
+	70% {margin-left: -200%;}
+	100% {margin-left: -200%;}
+    
+}
 /*--------footer-------*/
 footer{
     width:100%;
-    background: #f3f3f3;
+    background: #D9E5ED;
     font-family: 'Montserrat',sans-serif;
     position: relative;
-    z-index: 20000;
+    z-index: 2000;
 }
 /*---------------------*/
 @media only screen and (max-width: 1000px) {
@@ -414,6 +436,14 @@ footer{
   }
   .banner a{
     left: 35%;
+  }
+  .users .sub-texto5{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+  }
+  .each-user img{
+    margin-left: 32.5%;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -452,6 +482,18 @@ footer{
   .bloque p, .sub-texto5 p{
     font-size: 16px;
   }
+  .imagen5{
+    visibility: hidden;
+    width: 0;
+  }
+  .texto5{
+    width: 80%;
+    margin: auto;
+  }
+  .users .sub-texto5{
+    width: 100%;
+    padding: 10px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .buen-disenio{
@@ -472,21 +514,6 @@ footer{
     height: 350px;
     overflow: hidden;
     right: 0px;
-  }
-  .imagen5{
-    visibility: hidden;
-    width: 0;
-  }
-  .texto5{
-    width: 80%;
-    margin: auto;
-  }
-  .users .sub-texto5{
-    width: 100%;
-    padding: 10px;
-  }
-  .users img{
-    margin: auto;
   }
   .blank{
     height: 10px;
@@ -581,5 +608,8 @@ footer{
   }
   .bloque p{
     height: 60px;
+  }
+  .each-user img{
+    margin-left: 28%;
   }
 }
