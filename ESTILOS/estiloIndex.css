@@ -256,7 +256,8 @@ body{
 }
 .bloque{
   width: 30%;
-  min-width: 200px;
+  min-width: 250px;
+  margin: auto;
 }
 .bloque img{
   width: 100%;
@@ -479,6 +480,9 @@ footer{
     font-size: 20px;
     width: 200px;
   }
+  .bloque{
+    width: 50%;
+  }
   .bloque p, .sub-texto5 p{
     font-size: 16px;
   }
@@ -506,7 +510,7 @@ footer{
   .text2{
     width: 80%;
     min-width: 300px;
-    margin: 0px 5%; 
+    margin: 0px auto; 
   }
   .imagen2{
     position: relative;
@@ -547,7 +551,10 @@ footer{
     margin: auto;
   }
   .rapido{
-    top: 0px;
+    top: 50px;
+  }
+  .rapido h3{
+    font-size:18px;
   }
   .impacto{
     margin-top: 0;
@@ -599,9 +606,6 @@ footer{
   .rapido h3{
     font-size: 14px;
     width: 150px;
-  }
-  .rapido{
-    margin-top: -50px;
   }
   .bloque{
     width: 60%;
