@@ -21,7 +21,7 @@ body::-webkit-scrollbar-thumb{
 .social {
 	position: fixed;
 	top: 200px;
-	z-index: 20000;
+	z-index: 10000;
 }
 	.social ul {
 		list-style: none;
@@ -163,7 +163,6 @@ body::-webkit-scrollbar-thumb{
 	.social {
 		position: fixed;
 		top: 160px;
-		z-index: 20000;
 	}
 	.social ul li a {
 		padding: 8px 10px;
