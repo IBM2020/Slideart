@@ -17,33 +17,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script>
     $(document).ready(function(){
-      $(".casa").mouseover(function(){
-        $(".container-menu").css({"visibility":"visible"});
-      });
        $(".casa").click(function(){
-         $(".container-menu").toggle("1500ms");
+         $(".container-menu").css({"visibility":"visible"});
        });
-       $("#nosotros").mouseover(function(){
-         $(".sub1").css("top","126px");
-       });
-       $(".sub1").mouseover(function(){
-         $(".sub1").css("top","126px");
-       });
-       $(".sub1").mouseout(function(){
-         $(".sub1").css("top","-400px");
-       });
-       $("#promociones").mouseover(function(){
-         $(".sub1").css("top","-400px");
-       });
-       $("#paquetes").mouseover(function(){
-         $(".sub1").css("top","-400px");
-       });
-       $("#design").mouseover(function(){
-         $(".sub1").css("top","-400px");
-       });
-       $("header").mouseover(function(){
-         $(".sub1").css("top","-400px");
-       });
+       $("#cerrar").click(function(){
+         $(".container-menu").css({"visibility":"hidden"});
+       });      
+      
     });
     </script>
 		<title>Slideart</title>
@@ -53,7 +33,7 @@
   <header>
     <nav class="all" id="menu">
       <div class="enlaces">
-          <a class="casa" href="#"><img src="IMG/bars2.png" alt="menu" width="100%"></a>
+          <a class="casa" href="#" id="abrir-menu"><img src="IMG/bars2.png" alt="menu" width="100%"></a>
           <a class="cotiza" href="cotiza.html">COTIZAR</a> 
       </div>
       <div class="logo">
@@ -94,12 +74,21 @@
   </script>
 
   <div class="container-menu">
+    <i class="fas fa-times fa-2x" id="cerrar"></i>
+    <div class="fondo-menu"></div>
         <nav class="menu">
-            <a href="nosotros.html" class="item" id="nosotros"><p>¿Cómo funciona?</p><i class="fas fa-rocket  fa-3x icon"></i></a>
-            <a href="design.html" class="item" id="design"><p>Beneficios</p><i class="fas fa-chart-bar  fa-3x icon"></i></a>
-            <a href="aprende.html" class="item" id="promociones"><p>Testimonios</p><i class="fas fa-user-check  fa-3x icon"></i></a>
-            <a href="paquetes.html" class="item" id="paquetes"><p>Nosotros</p><i class="fas fa-users  fa-3x icon"></i></a>
-            <a href="paquetes.html" class="item" id="paquetes"><p>Trabaja con nosotros</p><i class="fas fa-handshake  fa-3x icon"></i></a>
+            <h2>MENU</h2>
+            <a href="nosotros.html" class="item" id="nosotros"><p>¿Cómo funciona?</p></a>
+            <a href="design.html" class="item" id="design"><p>Beneficios</p></a>
+            <a href="aprende.html" class="item" id="promociones"><p>Testimonios</p></a>
+            <a href="paquetes.html" class="item" id="paquetes"><p>Nosotros</p></a>
+            <a href="paquetes.html" class="item" id="paquetes"><p>Trabaja con nosotros</p></a><br><br>
+            <a href="https://www.facebook.com/SlideartCompany/"><i class="fab fa-facebook-f fa-2x"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=51952505077&fbclid=IwAR2mHffCqzAS1KqdStlIG8BO478RGyU4rC9ydVms2xySJStCg2DVfjso9sA"><i class="fab fa-whatsapp fa-2x"></i></a>
+            <a href="https://m.me/SlideartCompany"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+            <a href="https://instagram.com/slideart.comp?igshid=7c6ro0427h5s"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://vm.tiktok.com/ZSxdw9Yv/"><i class="fab fa-tiktok fa-2x"></i></a>
+            <a href="https://l.facebook.com/l.php?u=mailto%3Aslideartcompany%40gmail.com%3F"><i class="fas fa-envelope fa-2x"></i></a>
         </nav>
   </div>
 
