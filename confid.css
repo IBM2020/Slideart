@@ -1,0 +1,103 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.todo{
+  width: 70%;
+  margin: 120px auto;
+  padding:0 10px;
+  background: rgba(255,255,255,.9);
+  padding-bottom: 20px;
+}
+.todo>p{
+  width: 90%;
+  margin:auto;
+}
+.todo p{
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+}
+.raya{
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #e63944 0%, #103557 100%);
+  border-radius: 25px;
+  margin: 10px 0px 30px 0px;
+}
+h1{
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+.part, .part2{
+  display: flex;
+  flex-wrap: nowrap;
+  width: 90%;
+  margin:auto;
+  align-items: center;
+}
+.part img{
+  width:25%;
+  height: 100%;
+  padding-left: 30px;
+}
+.part2 img {
+  padding-right: 100px;
+  width:20%;
+  height: 100%;
+}
+footer{
+  width:100%;
+  background: #D9E5ED;
+  font-family: 'Montserrat',sans-serif;
+  position: relative;
+  z-index: 2000;
+}
+@media only screen and (max-width: 1024px){
+  .part2 img {
+    padding-right: 60px;
+  }
+  .part, .part2{
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+@media only screen and (max-width: 800px){
+  .part2 img {
+    padding-right: 20px;
+  }
+  .todo p{
+    font-size: 16px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  .part img{
+    padding-left: 8px;
+  }
+}
+@media only screen and (max-width: 500px){
+  .todo>p, .part, .part2{
+    width: 100%;
+  }
+  .todo p{
+    font-size: 14px;
+  }
+  .todo{
+    width: 80%;
+    margin-bottom: 30px;
+    margin-top: 100px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  .raya{
+    height: 5px;
+  }
+}
