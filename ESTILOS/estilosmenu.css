@@ -139,6 +139,10 @@ header{
   font-weight: 500;
   color: #f2f2f2;
 }
+#cotizar p{
+  font-weight: 800;
+  color: #103557;
+}
 .item{
     font-size: 30px;
     margin: 8px 0px;
@@ -183,5 +187,16 @@ header{
     height: 40px;
     margin: 0px 0px 0px 10px;
   }
-
+  .redes-menu{
+    margin-right: 10px;
+  }
+  .primer-icono{
+    margin-right: 20px;
+  }
+  .menu{
+    margin: 15% auto;
+  }
+  .fondo-menu{
+    width: 50%;
+  }
 }
