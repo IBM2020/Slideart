@@ -3,46 +3,166 @@
     <head>
 		<meta charset =utf-8>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		<link rel="icon" href="IMG/LOGO.ico">
+		<link rel="icon" href="IMG/ISOTIPO.ico">
+    <link rel="stylesheet" href="ESTILOS/estiloBasic.css">
+    <link rel="stylesheet" href="ESTILOS/estilosmenu.css">
+    <link rel="stylesheet" href="socialmedia.css">
 		<link rel="stylesheet" href="ESTILOS/privacidad.css">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+         $(".casa").click(function(){
+           $(".container-menu").css({"visibility":"visible"});
+         });
+         $("#cerrar").click(function(){
+           $(".container-menu").css({"visibility":"hidden"});
+         });      
+        
+      });
+      </script>
+      <title>Políticas de privacidad</title>
     </head>
+
     <body>
-      <div class="todo">
-        <div class="part1">
-            <img src="IMG/desk2.png">
-            <div class="titulo"><h1>POLÍTICAS DE PRIVACIDAD</h1></div>
-        </div>
-        <h2>INFORMACIÓN QUE ES RECOGIDA</h2>
-        <p>El presente establece los términos en que Slideart usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
-        </p>
-        <div class="part">
-            <div class="text">
-            <p>Nuestro sitio web podrá recoger información personal por ejemplo: Nombre,  información de contacto como  su dirección de correo electrónico y datos de carácter personal. Así mismo cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación.</p>
-            <h3>USO DE LA INFORMACIÓN RECOGIDA</h3>
-            <p>Nuestro sitio web emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios.  Es posible que sean enviados correos electrónicos periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier momento.</p>
-            </div>
-            <img src="IMG/PLANT5.png">
-        </div>
-        <div class="part2">
-            <img src="IMG/PLANT6.png">
-            <div class="text2">
-            <p>Slideart está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado.</p>
+      <header class="background-primary">
+        <nav class="all" id="menu">
+          <div class="enlaces">
+              <a class="casa" href="#" id="abrir-menu"><img src="IMG/bars2.png" alt="menu" width="100%"></a>
+              <a class="cotiza" href="cotiza.html">COTIZAR</a> 
           </div>
+          <div class="logo">
+            <a href="index.html"><img src="IMG/oficial.png" alt="home" id="home"></a>
         </div>
-        <div class="part3">
-          <div class="text">
-            <h3>ENLACES A TERCEROS</h3>
-            <p>Este sitio web pudiera contener enlaces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas.</p>
-              <p>Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial.</p>
-              <p>Slideart se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
+        </nav>
+      </header>
+
+      <div class="container-menu">
+        <i class="fas fa-times fa-2x" id="cerrar"></i>
+        <div class="fondo-menu"></div>
+            <nav class="menu">
+                <h2>MENU</h2>
+                <a href="index.html" class="item" id="nosotros"><p>Inicio</p></a>
+                <a href="nosotros.html" class="item" id="paquetes"><p>Nosotros</p></a>
+                <a href="#" class="item" id="nosotros"><p>¿Cómo funciona?</p></a>
+                <a href="#" class="item" id="beneficios"><p>Beneficios</p></a>
+                <a href="#" class="item" id="servicios"><p>Servicios</p></a>
+                <a href="trabaja.html" class="item" id="trabaja"><p>Trabaja con nosotros</p></a>
+                <a href="cotiza.html" class="item" id="cotizar"><p>COTIZAR</p></a><br><br>
+                <a href="https://www.facebook.com/SlideartCompany/" class="redes-menu primer-icono"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=51952505077&fbclid=IwAR2mHffCqzAS1KqdStlIG8BO478RGyU4rC9ydVms2xySJStCg2DVfjso9sA" class="redes-menu"><i class="fab fa-whatsapp fa-2x"></i></a>
+                <a href="https://m.me/SlideartCompany" class="redes-menu"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+                <a href="https://instagram.com/slideart.comp?igshid=7c6ro0427h5s" class="redes-menu"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://vm.tiktok.com/ZSxdw9Yv/" class="redes-menu"><i class="fab fa-tiktok fa-2x"></i></a>
+                <a href="https://l.facebook.com/l.php?u=mailto%3Aslideartcompany%40gmail.com%3F" class="redes-menu"><i class="fas fa-envelope fa-2x"></i></a>
+            </nav>
+      </div>
+      <script>
+        var anchoVentana=window.innerWidth   
+    
+        $(document).ready(function(){
+          if(anchoVentana < 500){
+            $("i").removeClass("fa-2x");
+          };
+          if(anchoVentana < 700){
+            $("#home").attr("src", "IMG/ISOTIPO_1X1.png");
+          };
+        });
+        
+      </script>
+    
+      <div class="social" id="social-media">
+        <ul>
+          <li><a href="https://www.facebook.com/SlideartCompany/" target="_blank" class="icon-facebook1"></a></li>
+          <li><a href="https://m.me/SlideartCompany" target="_blank" class="icon-bubble"></a></li>
+          <li><a href="https://instagram.com/slideart.comp?igshid=7c6ro0427h5s" target="_blank" class="icon-instagram"></a></li>
+          <li><a href="https://vm.tiktok.com/ZSxdw9Yv/" target="_blank" class="icon-tiktok"><i class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://l.facebook.com/l.php?u=mailto%3Aslideartcompany%40gmail.com%3F" class="icon-envelope2"></a></li>
+        </ul>
+      </div>
+    
+      <div class="loader">
+        <img src="loading.gif">
+      </div>
+      <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader").fadeOut("slow");
+        });
+      </script>
+
+      <div class="todo">
+          <h1>POLÍTICAS DE PRIVACIDAD</h1>
+          <div class="raya"></div>
+
+          <h2>INFORMACIÓN QUE ES RECOGIDA</h2><br>
+          <p>El presente establece los términos en que Slideart usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web. Esta compañía está comprometida con la seguridad de los datos de sus usuarios. Cuando le pedimos llenar los campos de información personal con la cual usted pueda ser identificado, lo hacemos asegurando que sólo se empleará de acuerdo con los términos de este documento. Sin embargo esta Política de Privacidad puede cambiar con el tiempo o ser actualizada por lo que le recomendamos y enfatizamos revisar continuamente esta página para asegurarse que está de acuerdo con dichos cambios.
+          </p>
+          <div class="part">
+              <div class="text">
+              <br><p>Nuestro sitio web podrá recoger información personal por ejemplo: Nombre,  información de contacto como  su dirección de correo electrónico y datos de carácter personal. Así mismo cuando sea necesario podrá ser requerida información específica para procesar algún pedido o realizar una entrega o facturación.</p>
+              <br><br><h3>USO DE LA INFORMACIÓN RECOGIDA</h3>
+              <br><p>Nuestro sitio web emplea la información con el fin de proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios, de pedidos en caso que aplique, y mejorar nuestros productos y servicios.  Es posible que sean enviados correos electrónicos periódicamente a través de nuestro sitio con ofertas especiales, nuevos productos y otra información publicitaria que consideremos relevante para usted o que pueda brindarle algún beneficio, estos correos electrónicos serán enviados a la dirección que usted proporcione y podrán ser cancelados en cualquier momento.</p>
+              </div>
+              <img src="IMG/PLANT5.png">
+          </div>
+          <div class="part2">
+              <img src="IMG/PLANT6.png">
+              <div class="text2">
+              <br><p>Slideart está altamente comprometido para cumplir con el compromiso de mantener su información segura. Usamos los sistemas más avanzados y los actualizamos constantemente para asegurarnos que no exista ningún acceso no autorizado.</p>
+              </div>
+          </div>
+          <div class="part3">
+            <div class="text">
+              <br><br><h3>ENLACES A TERCEROS</h3><br>
+              <p>Este sitio web pudiera contener enlaces a otros sitios que pudieran ser de su interés. Una vez que usted de clic en estos enlaces y abandone nuestra página, ya no tenemos control sobre al sitio al que es redirigido y por lo tanto no somos responsables de los términos o privacidad ni de la protección de sus datos en esos otros sitios terceros. Dichos sitios están sujetos a sus propias políticas de privacidad por lo cual es recomendable que los consulte para confirmar que usted está de acuerdo con estas.</p>
+              <br><p class="otro">Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial.</p>
+              <br><p class="otro">Slideart se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
             </div>
-              <img src="IMG/PLANT4.png">
-        </div>
-        </div>
+                <img src="IMG/PLANT4.png">
+          </div>
+          <div class="aparte">
+            <p>Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento, salvo que sea requerido por un juez con un orden judicial.</p>
+            <br><p>Slideart se reserva el derecho de cambiar los términos de la presente Política de Privacidad en cualquier momento.</p>
+          </div>
+      </div>
+
+        <footer>
+          <div id="footer">
+              <div class="nosotros">
+                  <div class="finalLogo">
+                    <img src="IMG/oficial.png">
+                  </div>
+        
+                  <div class="seguir">
+                    <a href="https://www.facebook.com/SlideartCompany/"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=51952505077&fbclid=IwAR2mHffCqzAS1KqdStlIG8BO478RGyU4rC9ydVms2xySJStCg2DVfjso9sA"><i class="fab fa-whatsapp fa-2x"></i></a>
+                    <a href="https://m.me/SlideartCompany"><i class="fab fa-facebook-messenger fa-2x"></i></a>
+                    <a href="https://instagram.com/slideart.comp?igshid=7c6ro0427h5s"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://vm.tiktok.com/ZSxdw9Yv/"><i class="fab fa-tiktok fa-2x"></i></a>
+                    <a href="https://l.facebook.com/l.php?u=mailto%3Aslideartcompany%40gmail.com%3F"><i class="fas fa-envelope fa-2x"></i></a>
+                  </div>
+                  
+              </div>
+        
+              <div class="contacto">
+                <h3>CONTACTO</h3>
+                <p>Teléfono: +51 952505077</p>
+                <p>Redes sociales: @slideart.comp</p>
+                <br>
+                <h3>BASE LEGAL</h3>
+                <a href="confidencialidad.html" target="_blank"><p>Términos de confidencialidad</p></a>
+                <a href="privacidad.html" target="_blank"><p>Políticas de privacidad</p></a>
+                <a href="uso.html" target="_blank"><p>Condiciones de uso</p></a>
+        
+              </div>
+          </div>
+          <div class="copyright">
+            <p>COPYRIGHT 2020. Todos los derechos reservados</p>
+          </div>
+        </footer>
     </body>
 </html>
