@@ -1,27 +1,23 @@
-body::-webkit-scrollbar{
-	width:7px;
-	background: #f2f2f2;
-}
-body::-webkit-scrollbar-thumb{
-	background: rgba(0,0,0,.5);
-	border-radius: 5px;
-	border-left: 2px solid #fff;
-}
 body{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+.raya{
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to right, #103557 0%, #4de9dc 100%);
+  border-radius: 25px;
+  margin: 10px 0px 30px 0px;
 }
 .todo{
   width: 80%;
-  margin:0px auto;
-  background: rgba(255,255,255,.9);
+  margin:120px auto 90px auto;
 }
-.todo>p{
+.todo>p, .todo h2{
   width: 95%;
   margin:auto;
 }
@@ -30,12 +26,14 @@ body{
   font-weight: 400;
   text-align: justify;
 }
-.todo h2{
-  padding-left: 30px;
-}
 h1{
-  font-size: 50px;
-  padding: 50px;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+h2, h3{
+  font-size: 25px;
+  font-weight: 700;
 }
 .part1, .part, .part2, .part3{
   display: flex;
@@ -63,6 +61,79 @@ h1{
   width:30%;
   height: 100%;
 }
-.todo h3{
-  font-size: 24px;
+.aparte{
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
+}
+footer{
+  width:100%;
+  background: #D9E5ED;
+  font-family: 'Montserrat',sans-serif;
+  position: relative;
+  z-index: 2000;
+}
+@media only screen and (max-width: 1024px){
+  .part2 img{
+    padding: 12px;
+  }
+  .part3 img, .part img{
+    padding: 0px;
+  }
+  .differ{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px){
+  .part img{
+    visibility: hidden;
+    width: 0;
+  }
+  .todo p{
+    font-size: 16px;
+  }
+  h1{
+    font-size: 25px;
+  }
+  h2, h3{
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 500px){
+  .todo>p, .part, .part2, .part3{
+    width: 100%;
+  }
+  .todo p{
+    font-size: 14px;
+  }
+  .todo{
+    width: 75%;
+    margin-bottom: 30px;
+    margin-top: 100px;
+  }
+  h1{
+    font-size: 20px;
+  }
+  h2, h3{
+    font-size: 16px;
+  }
+  .raya{
+    height: 5px;
+  }
+  .part2 img {
+    width:20%;
+    padding: 0;
+  }
+  .otro{
+    visibility: hidden;
+    font-size: 0px;
+    height: 0;
+  }
+  .aparte{
+    position: relative;
+    visibility: visible;
+    top: -20px;
+    height: auto;
+  }
 }
