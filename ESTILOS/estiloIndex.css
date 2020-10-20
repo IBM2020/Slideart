@@ -428,14 +428,6 @@ body{
 	100% {margin-left: -200%;}
     
 }
-/*--------footer-------*/
-footer{
-    width:100%;
-    background: #D9E5ED;
-    font-family: 'Montserrat',sans-serif;
-    position: relative;
-    z-index: 2000;
-}
 /*---------------------*/
 @media only screen and (max-width: 1000px) {
   .Solo-titulo h1{

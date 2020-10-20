@@ -68,6 +68,13 @@ body::-webkit-scrollbar-thumb{
 		left: 30%;
 	}
 	/*-----------footer-----------*/
+	footer{
+		width:100%;
+		background: #D9E5ED;
+		font-family: 'Montserrat',sans-serif;
+		position: relative;
+		z-index: 2000;
+	}
 	#footer{
 	  width:80%;
 	  display: flex;
