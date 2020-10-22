@@ -40,6 +40,20 @@
         </div>
         </nav>
       </header>
+      <script>
+        var anchoVentana=window.innerWidth   
+    
+        $(document).ready(function(){
+          if(anchoVentana < 500){
+            $("i").removeClass("fa-2x");
+          };
+          if(anchoVentana < 700){
+            $("#home").attr("src", "IMG/ISOTIPO_1X1.png");
+          };
+        });
+        
+      </script>
+
 
     <div class="container-menu">
     <i class="fas fa-times fa-2x" id="cerrar"></i>
@@ -48,11 +62,11 @@
             <h2>MENU</h2>
             <a href="index.html" class="item" id="nosotros"><p>Inicio</p></a>
             <a href="nosotros.html" class="item" id="paquetes"><p>Nosotros</p></a>
-                <a href="#" class="item" id="nosotros"><p>¿Cómo funciona?</p></a>
-                <a href="#" class="item" id="beneficios"><p>Beneficios</p></a>
-                <a href="#" class="item" id="servicios"><p>Servicios</p></a>
-                <a href="trabaja.html" class="item" id="trabaja"><p>Trabaja con nosotros</p></a>
-                <a href="cotiza.html" class="item" id="cotizar"><p>COTIZAR</p></a><br><br>
+            <a href="#" class="item" id="nosotros"><p>¿Cómo funciona?</p></a>
+            <a href="#" class="item" id="beneficios"><p>Beneficios</p></a>
+            <a href="#" class="item" id="servicios"><p>Servicios</p></a>
+            <a href="trabaja.html" class="item" id="trabaja"><p>Trabaja con nosotros</p></a>
+            <a href="cotiza.html" class="item" id="cotizar"><p>COTIZAR</p></a><br><br>
             <a href="https://www.facebook.com/SlideartCompany/" class="redes-menu primer-icono"><i class="fab fa-facebook-f fa-2x"></i></a>
             <a href="https://api.whatsapp.com/send?phone=51952505077&fbclid=IwAR2mHffCqzAS1KqdStlIG8BO478RGyU4rC9ydVms2xySJStCg2DVfjso9sA" class="redes-menu"><i class="fab fa-whatsapp fa-2x"></i></a>
             <a href="https://m.me/SlideartCompany" class="redes-menu"><i class="fab fa-facebook-messenger fa-2x"></i></a>
