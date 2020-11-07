@@ -100,6 +100,18 @@ p{
   background: #1E3557;
   color: white;
 }
+.secciones{
+  width: 100%;
+  overflow: hidden;
+}
+.secciones > .all-tabs{
+  width: 200%;
+  display: flex;
+  transition: all ease 450ms;
+}
+#tab1 , #tab2{
+  width: 100%;
+}
 .fecha h2{
   font-size: 30px;
   text-align: center;
