@@ -5,34 +5,152 @@ body{
     width: 100%;
 }
 .nosotros1{
-  width: 80%;
   height: 100%;
-  margin: 100px auto 20px auto;
-  min-height: 500px;
-  font-family: 'Montserrat',sans-serif;
+  margin-top: 80px;
 }
-.video{
+.fondo-parte1, .fondoParte3, .fondoParte4, .fondoParte5{
   width: 100%;
-  height: 410px;
-  overflow: hidden;
+  height: 100%;
+  background-repeat: no-repeat; 
+  background-size: cover;
+  padding: 40px 0px;
+}
+.fondo-parte1{
+  background-image: url("FondosP1.png");
+}
+.fondoParte3{
+  background-image: url("FondosP3.png");
+}
+.fondoParte4{
+  background: #1E3557;
+}
+.fondoParte5{
+  background-image: url("FondosP5.png");
+  padding-bottom: 100px;
+}
+.nosotros1 h3{
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Satisfy', Arial, sans-serif;
+  font-weight: 500;
+}
+.contenerdorVideo{
+  width: 80%;
+  margin: 0px auto;
+  padding: 30px 0px;
+  height: 100%;
+  position: relative;
+  overflow: auto;
+}
+.video-poster{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("fb5.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  z-index: 100;
+  cursor: pointer;
+}
+.video-poster i, .video-poster button{
+   position: relative;
+   top: calc(50% - 30px);
+   left: calc(50% - 30px);
+   border: none;
+   background: none;
+   cursor: pointer;
 }
 .both{
   width: 100%;
-  display: flex;
-  margin: 20px auto;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  background: #D3455B;
+  color: #fff;
 }
-.mision, .vision{
-  width: 47%;
-  min-width: 200px;
-  padding: 10px 8px;
-  background: #D9E5ED;
+section{
+  padding: 20px 60px 20px 20px;
 }
-.texto{
-  width: 80%;
+h2{
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+p{
+  text-align: justify;
+}
+.nosotros1 img{
+  width: 100%;
+}
+.raya{
+  width: 20%;
+  height: 2px;
+  background: #fff;
+  margin-top: 15px;
+}
+.historia{
+  padding: 50px;
+}
+.fecha{
+  max-width: 114px;
+  border-radius: 50%;
+  border: 2px solid #1E3557;
+  padding: 8% 0px;
+  cursor: pointer;
+}
+.active{
+  background: #1E3557;
+  color: white;
+}
+.fecha h2{
+  font-size: 30px;
   text-align: center;
-  margin: auto;
+}
+textarea{	
+  min-height: 100px;
+	max-height: 200px;
+	max-width: 100%
+}
+#formulario{
+  margin: 0px auto;
+  width: 100%;
+}
+form{
+  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+}
+#nombre, #correo, #telefono{
+  height: 30px;
+}
+input, textarea{	
+  width: 100%;
+  border: none;
+	background-color: #F3F6F8;
+	color: #1d1d1d;
+	margin-bottom: 20px;
+}
+textarea{
+  min-height: 150px;
+}
+label{
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+#send{	
+  width: 40%;
+  margin-left: 30%;
+  background-color: #1E3557;
+	color: white;
+	border: none;
+	padding: 5px;
+  font-size: 18px;
+  font-family: 'Montserrat',Arial, Helvetica, sans-serif;
+  font-weight: 400;
+	cursor:pointer;
+}
+.empresas-nosotros h2{
+  text-align: center;
+  color: white;
 }
 footer{
   width:100%;
@@ -41,12 +159,8 @@ footer{
   position: relative;
   z-index: 2000;
 }
-@media only screen and (max-width: 500px){
-  .video{
-    height: 250px;
-  }
-  .mision, .vision{
-    width: 80%;
-    margin: auto;
+@media only screen and (max-width: 767px){
+  .fondo-parte1, .fondoParte3, .fondoParte4, .fondoParte5{
+    background-size: contain;
   }
 }
