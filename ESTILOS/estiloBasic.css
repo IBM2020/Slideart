@@ -61,6 +61,7 @@ body::-webkit-scrollbar-thumb{
 		flex-wrap: wrap;
 		justify-content: space-between;
 		align-items: center;
+		transition: all ease 350ms;
 	}
 	/*-----------loader-----------*/
 	.loader{
