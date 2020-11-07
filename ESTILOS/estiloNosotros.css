@@ -152,6 +152,9 @@ label{
   text-align: center;
   color: white;
 }
+.empresas-nosotros > div > div{
+  padding: 10px;
+}
 footer{
   width:100%;
   background: #D9E5ED;
@@ -163,4 +166,14 @@ footer{
   .fondo-parte1, .fondoParte3, .fondoParte4, .fondoParte5{
     background-size: contain;
   }
+}
+@media only screen and (max-width: 500px){
+  section {
+    padding: 20px 20px 20px 30px;
+  }
+}
+@media (max-width: 400px){
+	.nosotros1{
+		margin-top: 60px;
+	}
 }
