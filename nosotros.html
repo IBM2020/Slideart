@@ -26,7 +26,16 @@
        $("#play").click(function(){
           $(".video-poster").toggle("1500ms");
         });    
-      
+       $("#segundaFecha").click(function(){
+         $("#segundaFecha").addClass("active");
+         $("#primeraFecha").removeClass("active");
+         $("#allTabs").css({"margin-left": "-100%"});
+       });
+       $("#primeraFecha").click(function(){
+         $("#primeraFecha").addClass("active");
+         $("#segundaFecha").removeClass("active");
+         $("#allTabs").css({"margin-left": "0px"});
+       });
     });
     </script>
 		<title>Nosotros</title>
@@ -156,27 +165,43 @@
    
   <div class="fondoParte3">
     <div class="contenedor flex-style">
+
       <div class="col-lg-6 col-sm-12">
         <img src="IMG/Fb1.jpg" style="width:100%;">
       </div>
 
-      <div class="col-lg-6 col-sm-12" style="flex-wrap: nowrap;">
+      <div class="col-lg-6 col-sm-12">
         <section class="historia">
           <h3>Nuestra historia</h3><br>
+
           <div class="contenedor flex-style">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 fecha active">
+            <div id="primeraFecha" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 fecha active">
               <h2>2019</h2>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
               <img src="IMG/flecha.png" alt="flecha">
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 fecha">
+            <div id="segundaFecha" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 fecha">
               <h2>2020</h2>
             </div>
           </div>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusantium optio consequuntur odit corporis minima assumenda commodi, soluta reprehenderit cupiditate sunt voluptates, exercitationem, excepturi impedit eius aspernatur neque sit corrupti.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusantium optio consequuntur odit corporis minima assumenda commodi, soluta reprehenderit cupiditate sunt voluptates, exercitationem, excepturi impedit eius aspernatur neque sit corrupti.</p>
+
+          <div class="secciones">
+            <div id="allTabs" class="all-tabs">
+              <article id="tab1">
+                <br>
+                <h2>en el 2019</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusantium optio consequuntur odit corporis minima assumenda commodi, soluta reprehenderit cupiditate sunt voluptates, exercitationem, excepturi impedit eius aspernatur neque sit corrupti.</p>
+              </article>
+  
+              <article id="tab2">
+                <br>
+                <h2>en el 2020</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi accusantium optio consequuntur odit corporis minima assumenda commodi, soluta reprehenderit cupiditate sunt voluptates, exercitationem, excepturi impedit eius aspernatur neque sit corrupti.</p>
+              </article>
+            </div>
+
+          </div>
 
         </section>
       </div>
@@ -189,10 +214,10 @@
       <section class="empresas-nosotros">
         <h2>CLIENTES SATISFECHOS / EMPRESAS</h2>
         <div class="flex-style">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><img src="IMG/oficial.png"></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><img src="IMG/oficial.png"></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><img src="IMG/oficial.png"></div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><img src="IMG/oficial.png"></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><img src="IMG/cemi.png"></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><img src="IMG/incuba.png"></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><img src="IMG/innovate.jpg"></div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6"><img src="IMG/startup2.png"></div>
         </div>
 
       </section>
